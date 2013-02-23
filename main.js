@@ -38,22 +38,22 @@
       styles: [{
         where: "'Type' IN ('Early Head Start')",
         markerOptions: {
-          iconName: 'small_purple'
+          iconName: 'large_purple'
         }
       }, {
         where: "'Type' IN ('Head Start Family Child Care')",
         markerOptions: {
-          iconName: 'small_green'
+          iconName: 'large_green'
         }
       }, {
         where: "'Type' IN ('Head Start')",
         markerOptions: {
-          iconName: 'small_blue'
+          iconName: 'large_blue'
         }
       }, {
         where: "'Type' IN ('OUSD')",
         markerOptions: {
-          iconName: 'small_yellow'
+          iconName: 'large_yellow'
         }
       }],
       map: map,
@@ -69,7 +69,7 @@
     };
 
     $('.toggles').find('input[type="checkbox"]').on('change', function(e) {
-      changeQuery($(this).data('query'))
+      changeQuery();
     });
 
     $('#search_input').keypress(function (e) {
