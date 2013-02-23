@@ -20,6 +20,27 @@
         select: "col3",
         from: "14ZHXZcZ3Fy4Qk0k3_cNV16N_Xl-n5GHy2kd8XEM"
       },
+      styles: [{
+        where: "'Type' IN ('Early Head Start')",
+        markerOptions: {
+          iconName: 'small_purple'
+        }
+      }, {
+        where: "'Type' IN ('Head Start Family Child Care')",
+        markerOptions: {
+          iconName: 'small_green'
+        }
+      }, {
+        where: "'Type' IN ('Head Start')",
+        markerOptions: {
+          iconName: 'small_blue'
+        }
+      }, {
+        where: "'Type' IN ('OUSD')",
+        markerOptions: {
+          iconName: 'small_yellow'
+        }
+      }],
       map: map,
       styleId: 2,
       templateId: 2
