@@ -14,6 +14,21 @@
       zoom: 13,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+    map.setOptions({
+      stylers: [{
+        stylers: [
+          { hue: "#00ffe6" },
+          { saturation: -20 }
+        ]
+      },{
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          { lightness: 100 },
+          { visibility: "simplified" }
+        ]
+      }]
+    });
 
     layerl0 = new google.maps.FusionTablesLayer({
       query: {
@@ -52,6 +67,28 @@
       codeAddress(search);
       return false;
     };
+
+    $('.toggles').find('input[type="checkbox"]').on('change', function(e) {
+      changeQuery($(this).data('query'))
+    });
+  }
+
+  function changeQuery() {
+    var str = "'Ages Served' IN (";
+    var queries = [];
+    var toggles = $('.toggles').find('input[type="checkbox"]').each(function(el) {
+      if ($(this).prop('checked')) {
+        queries.push("'" + $(this).data('query') + "'");
+      }
+    });
+    str += queries.join(',') + ')';
+    layerl0.setOptions({
+      query: {
+        select: "col3",
+        from: "14ZHXZcZ3Fy4Qk0k3_cNV16N_Xl-n5GHy2kd8XEM",
+        where: str
+      }
+    });
   }
 
   function codeAddress(address) {
