@@ -71,6 +71,13 @@
     $('.toggles').find('input[type="checkbox"]').on('change', function(e) {
       changeQuery($(this).data('query'))
     });
+
+    $('#search_input').keypress(function (e) {
+      if (e.which == 13) {
+        $('#search_button').click();
+      }
+    });
+        
   }
 
   function changeQuery() {
