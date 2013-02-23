@@ -38,22 +38,22 @@
       styles: [{
         where: "'Type' IN ('Early Head Start')",
         markerOptions: {
-          iconName: 'large_purple'
-        }
-      }, {
-        where: "'Type' IN ('Head Start Family Child Care')",
-        markerOptions: {
-          iconName: 'large_green'
+          iconName: 'purple_blank'
         }
       }, {
         where: "'Type' IN ('Head Start')",
         markerOptions: {
-          iconName: 'large_blue'
+          iconName: 'blu_blank'
+        }
+      }, {
+        where: "'Type' IN ('Head Start Family Child Care')",
+        markerOptions: {
+          iconName: 'grn_blank'
         }
       }, {
         where: "'Type' IN ('OUSD')",
         markerOptions: {
-          iconName: 'large_yellow'
+          iconName: 'ylw_blank'
         }
       }],
       map: map,
