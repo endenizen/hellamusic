@@ -24,9 +24,19 @@ body {
   background-color: white;
   float: left;
   width: 300px;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 50px;
 }
 
 div.form {
   margin-bottom: 5px;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  font-size: small;
+  padding: 5px;
+  width: 300px;
 }
