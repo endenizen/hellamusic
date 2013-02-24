@@ -10,6 +10,10 @@ body {
   height: 100%;
 }
 
+#logo {
+  text-align: center;
+}
+
 #map-canvas {
   z-index: 1;
   margin-left: 300px;
@@ -20,7 +24,11 @@ body {
   background-color: white;
   float: left;
   width: 300px;
-  padding: 0px 20px;
+  padding: 10px 20px;
+}
+
+div.form {
+  margin-bottom: 5px;
 }
 
 .legend ul {
