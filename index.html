@@ -13,21 +13,35 @@
     </script>
   </head>
   <body>
-    <div id="controls">
-      <center>
-        <img id="logo" src="oaklandtree.png">
-      </center>
-      <h1>Oakland Early Childhood Services</h1>
-      <div id="search" class="form">
-        <label for="search_input"><b>Address: </b></label>
-        <input type="text" id="search_input" /> <input type="button" id="search_button" value="Search" />
-      </div>
-      <div id="toggles" class="form">
-        <b>Ages served:</b><br />
-        <label><input type="checkbox" id="zero_to_three" data-query="prenatal - 3-yrs" checked /> 0-3 years</label>
-        <label><input type="checkbox" id="three_to_five" data-query="3-5-yrs" checked /> 3-5 years</label>
-        <label><input type="checkbox" id="three_to_eight" data-query="3-8-yrs" checked /> 3-8</label>
-        <label><input type="checkbox" id="three_to_ten" data-query="3-10-yrs" checked /> 3-10</label>
+    <div id="sidebar">
+      <div id="controls">
+        <center>
+          <img id="logo" src="oaklandtree.png">
+        </center>
+
+        <h1>Oakland Early Childhood Services</h1>
+
+        <div id="search" class="form">
+          <label for="search_input"><b>Address: </b></label>
+          <input type="text" id="search_input" /> <input type="button" id="search_button" value="Search" />
+        </div>
+        <div id="toggles" class="form">
+          <b>Ages served:</b><br />
+          <label><input type="checkbox" id="zero_to_three" data-query="prenatal - 3-yrs" checked /> 0-3</label>
+          <label><input type="checkbox" id="three_to_five" data-query="3-5-yrs" checked /> 3-5</label>
+          <label><input type="checkbox" id="three_to_eight" data-query="3-8-yrs" checked /> 3-8</label>
+          <label><input type="checkbox" id="three_to_ten" data-query="3-10-yrs" checked /> 3-10</label>
+        </div>
+
+        <div id="legend" class="form">
+          <b>Types:</b>
+          <ul>
+            <li><img src="purple.png" /> Early Head Start</li>
+            <li><img src="blue.png" /> Head Start</li>
+            <li><img src="green.png" /> Child Care Early Head Start</li>
+            <li><img src="yellow.png" /> OUSD</li>
+          </ul>
+        </div>
       </div>
 
       <div id="footer">

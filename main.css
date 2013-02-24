@@ -10,8 +10,14 @@ body {
   height: 100%;
 }
 
+h1 {
+  text-align: center;
+}
+
 #logo {
   text-align: center;
+  margin-bottom: -150px;
+  opacity: 0.3;
 }
 
 #map-canvas {
@@ -20,11 +26,15 @@ body {
   height:100%;
 }
 
-#controls {
+#sidebar {
   background-color: white;
   float: left;
   width: 300px;
-  padding: 10px 20px 10px 50px;
+}
+
+#controls {
+  padding: 10px 10px 50px 10px;
+  width: 280px;
 }
 
 div.form {
@@ -38,5 +48,19 @@ div.form {
   background-color: white;
   font-size: small;
   padding: 5px;
-  width: 300px;
+  width: 280px;
+}
+
+#legend ul {
+  margin: 5px 0 0 5px;
+  padding: 0;
+  list-style-type: none;
+}
+
+#legend ul li {
+  line-height: 2.5em;
+}
+
+#legend li img {
+  vertical-align: middle;
 }
