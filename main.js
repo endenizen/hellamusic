@@ -14,21 +14,6 @@
       zoom: 13,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    map.setOptions({
-      stylers: [{
-        stylers: [
-          { hue: "#00ffe6" },
-          { saturation: -20 }
-        ]
-      },{
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [
-          { lightness: 100 },
-          { visibility: "simplified" }
-        ]
-      }]
-    });
 
     layerl0 = new google.maps.FusionTablesLayer({
       query: {
