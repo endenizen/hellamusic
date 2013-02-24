@@ -53,7 +53,7 @@
       return false;
     };
 
-    $('.toggles').find('input[type="checkbox"]').on('change', function(e) {
+    $('#toggles').find('input[type="checkbox"]').on('change', function(e) {
       changeQuery();
     });
 
@@ -68,7 +68,7 @@
   function changeQuery() {
     var str = "'Ages Served' IN (";
     var queries = [];
-    var toggles = $('.toggles').find('input[type="checkbox"]').each(function(el) {
+    var toggles = $('#toggles').find('input[type="checkbox"]').each(function(el) {
       if ($(this).prop('checked')) {
         queries.push("'" + $(this).data('query') + "'");
       }
