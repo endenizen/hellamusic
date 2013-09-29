@@ -4,6 +4,8 @@
     <style>
     </style>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://rdio.com/api/api.js?client_id=zg9XEisbJE_S6ngdSwcOjA"></script>
+    <script type="text/javascript" src="underscore-min-1.4.4.js"></script>
     <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="main.js"></script>
@@ -22,50 +24,36 @@
     </script>
   </head>
   <body>
+    <div id="track_info">
+      <div id="track_art">
+        <a href="#" target="_blank">
+          <img />
+        </a>
+      </div>
+      <div id="track_title"></div>
+      <div id="track_artist"></div>
+    </div>
+
     <div id="sidebar">
       <div id="controls">
         <div id="logo">
           <img src="oaklandtree.png" />
         </div>
 
-        <h1>Oakland Early Childhood Services</h1>
-
-        <p>More information about Oakland's Head Start program: <a href="http://www2.oaklandnet.com/Government/o/DHS/o/ChildrenYouthServices/OAK022077">click here</a></p>
+        <h1>Hella Music</h1>
 
         <div id="search" class="form">
           <label for="search_input"><b>Address: </b></label>
           <input type="text" id="search_input" /> <input type="button" id="search_button" value="Search" />
         </div>
-        <div id="toggles" class="form">
-          <b>Ages served:</b><br />
-          <label><input type="checkbox" id="zero_to_three" data-query="prenatal - 3-yrs" checked /> 0-3</label>
-          <label><input type="checkbox" id="three_to_five" data-query="3-5-yrs" checked /> 3-5</label>
-          <label><input type="checkbox" id="three_to_eight" data-query="3-8-yrs" checked /> 3-8</label>
-          <label><input type="checkbox" id="three_to_ten" data-query="3-10-yrs" checked /> 3-10</label>
-        </div>
-
-        <div id="legend" class="form">
-          <b>Types:</b>
-          <ul>
-            <li><img src="purple.png" /> Early Head Start</li>
-            <li><img src="blue.png" /> Head Start</li>
-            <li><img src="green.png" /> Child Care Early Head Start</li>
-            <li><img src="yellow.png" /> OUSD</li>
-          </ul>
-        </div>
       </div>
 
       <div id="footer">
         <p>
-          Built using <a href="http://data.openoakland.org/dataset/early-childhood-services/resource/745b7e7f-b4f8-44ed-adbe-cadc92f18581">open data</a>
-          from <a href="http://openoakland.org/">Open Oakland</a>
-          by <a href="http://twitter.com/ian">@ian</a>
-          and <a href="http://twitter.com/endenizen">@endenizen</a>.
-          <a href="http://www.opendefinition.org/licenses/odc-by"><img
-            src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png"></a>.
+          by <a href="http://twitter.com/endenizen">@endenizen</a>.
         </p>
         <p>
-          Source code and installation instructions are available <a href="https://github.com/endenizen/headstart">here</a>.
+          Source code and installation instructions are available <a href="https://github.com/endenizen/hellamusic">here</a>.
         </p>
       </div>
     </div>

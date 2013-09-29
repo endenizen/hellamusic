@@ -20,20 +20,65 @@ h1 {
   opacity: 0.3;
 }
 
+#search {
+  margin-top: 95px;
+}
+
 #map-canvas {
   z-index: 1;
-  margin-left: 300px;
   height:100%;
 }
 
 #sidebar {
-  background-color: white;
-  float: left;
   width: 300px;
+  height: 295px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.7);
+}
+
+#track_art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
+#track_art img {
+  width: 200px;
+  height: 200px;
+  border: 0;
+  display: none;
+}
+
+#track_title, #track_artist {
+  display: none;
+  width: 100%;
+  text-align: right;
+  background: rgba(255,255,255,0.7);
+  z-index: 100;
+  padding: 10px;
+}
+
+#track_title {
+  position: absolute;
+  right: 230px;
+  bottom: 60px;
+}
+
+#track_artist {
+  position: absolute;
+  right: 230px;
+  bottom: 20px;
 }
 
 #controls {
-  padding: 10px 10px 50px 10px;
+  padding: 10px;
   width: 280px;
 }
 
@@ -45,7 +90,6 @@ div.form {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: white;
   font-size: small;
   padding: 5px;
   width: 280px;
