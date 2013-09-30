@@ -1,10 +1,13 @@
-Headstart
-=========
+HellaMusic
+==========
 
-Map and resources about headstart programs across Oakland.
+Find music from Oakland and beyond!
 
-To install, simply download the zip file located here:
+Move the map to any location using drag and drop or the search box provided. When you get to a new location, music by artists that are from that area will start playing.
 
-https://github.com/endenizen/headstart/archive/gh-pages.zip
+This hack was made as part of the Hella Hack Oakland music hackathon at Pandora in Oakland, CA.
 
-Extract it to a directory accessible via web server. It can run on any web server and requires no special components.
+Technology
+==========
+
+The Google Maps API provides the mapping interface and the latitude/longitude of the current window. Sending that information to Echonest returns a list of songs by artists within those bounds. I then take a random song from that list and play it through the Rdio JS API.
